@@ -51,7 +51,7 @@ function Dash_Card_list({ data }) {
                 {item.name}
               </Text>
               <Text fw={"bold"} size="sm" mt={"xs"}>
-                {item.price} so'm
+                {item.price}so'm
               </Text>
 
 

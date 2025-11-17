@@ -4,20 +4,25 @@ import Link from "next/link";
 
 function Dash_Nav() {
     return (
-    <>
-    <Flex py={"xs"} gap={'sm'}>
-<Link href={`/dashboard`}>
-<Button>
-    Dashboard
-</Button>
-</Link>
-<Link href={`/dashboard/add`}>
-<Button variant="light">
-    Mahsulotni qo'shish
-</Button>
-</Link>
-    </Flex>
-    </>
+        <>
+            <Flex py={"xs"} gap={'sm'}>
+                <Link href={"/"}>
+                    <Button>
+                        Bosh Sahifa
+                    </Button>
+                </Link>
+                <Link href={`/dashboard`}>
+                    <Button>
+                        Dashboard
+                    </Button>
+                </Link>
+                <Link href={`/dashboard/add`}>
+                    <Button variant="light">
+                        Mahsulotni qo'shish
+                    </Button>
+                </Link>
+            </Flex>
+        </>
     );
 }
 
