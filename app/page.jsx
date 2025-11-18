@@ -10,7 +10,7 @@ import Card_List from "../components/Cards/Card_List";
 
   export default function Home() {
     const { data, error, isLoading } = useSWR(
-      "https://lesson-bot-node.onrender.com/api/products",
+      "http://localhost:5000//api/products",
       fetcher
     );
 
