@@ -29,7 +29,7 @@ const Card_List = ({ data }) => {
 
 
                 <Group grow mt={"xs"} >
-                  <Button color='dark' size="compact-md" rightSection={<IconShoppingCartPlus size={20}/>}>
+                  <Button color='dark'  rightSection={<IconShoppingCartPlus size={20}/>}>
                     Savatga Qo'shish
                   </Button>
                 </Group>
