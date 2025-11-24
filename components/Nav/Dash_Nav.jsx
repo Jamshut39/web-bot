@@ -11,11 +11,6 @@ function Dash_Nav() {
                         Bosh Sahifa
                     </Button>
                 </Link>
-                <Link href={`/dashboard`}>
-                    <Button>
-                        Dashboard
-                    </Button>
-                </Link>
                 <Link href={`/dashboard/add`}>
                     <Button variant="light">
                         Mahsulotni qo'shish
