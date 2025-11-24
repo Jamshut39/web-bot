@@ -27,7 +27,7 @@ const page = () => {
         data: category,
         error,
         isLoading,
-    } = useSWR("https://lesson-bot-node.onrender.com/api/categories", fetcher);
+    } = useSWR("https://web-bot-node-npbl.onrender.com/api/categories", fetcher);
 
 
     const catSelect = category?.map((item) => {
@@ -80,7 +80,7 @@ const page = () => {
     const CreateProduct = async (values) => {
         try {
             let res = await fetch(
-                "https://lesson-bot-node.onrender.com/api/products",
+                "https://web-bot-node-npbl.onrender.com/api/products",
                 {
                     method: "POST",
                     headers: {
@@ -121,7 +121,7 @@ const page = () => {
             <form onSubmit={form.onSubmit(CreateProduct)}>
                 <Paper p="md" mt="md" withBorder>
                     <Grid>
-      
+
                         <Grid.Col span={{ base: 12, md: 6 }}>
                             <TextInput
                                 withAsterisk
@@ -177,7 +177,7 @@ const page = () => {
                         </Grid.Col>
 
 
-                     
+
                         <Grid.Col span={{ base: 12 }}>
                             <Textarea
                                 resize="vertical"

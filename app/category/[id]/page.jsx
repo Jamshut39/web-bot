@@ -11,10 +11,10 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json());
 const page = () => {
     const { id } = useParams();
     const { data, error, isLoading } = useSWR(
-        `https://lesson-bot-node.onrender.com/api/products/category/${id}`,
+        `https://web-bot-node-npbl.onrender.com/api/products/category/${id}`,
         fetcher
     );
-    
+
     if (error) return <div>failed to load</div>;
     if (isLoading) return <div>loading...</div>;
 
@@ -48,13 +48,13 @@ const page = () => {
                                     <Text size="xs" c="dimmed" lineClamp={2}>
                                         {item.description}
                                     </Text>
-  
-                                         <Link href={`/product/${id}`}>
-                                    <Button color="dark" fullWidth mt="md" size="compact-md" 
-                                    rightSection={<IconShoppingCartPlus size={20}/>}>
-                                        Savatga Qo'shish
-                                    </Button>
-                                     </Link>
+
+                                    <Link href={`/product/${id}`}>
+                                        <Button color="dark" fullWidth mt="md" size="compact-md"
+                                            rightSection={<IconShoppingCartPlus size={20} />}>
+                                            Savatga Qo'shish
+                                        </Button>
+                                    </Link>
                                 </Card>
                             </Grid.Col>
                         );

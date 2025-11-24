@@ -9,7 +9,7 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 const page = () => {
     const { data, error, isLoading } = useSWR(
-        "https://lesson-bot-node.onrender.com/api/products",
+        "https://web-bot-node-npbl.onrender.com/api/products",
         fetcher
     );
 
@@ -20,7 +20,7 @@ const page = () => {
         <>
             <Container>
                 <Dash_Nav />
-                 <Dash_Card_List data={data}/>
+                <Dash_Card_List data={data} />
             </Container>
         </>
     );
