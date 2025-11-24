@@ -57,7 +57,7 @@ function Dash_Card_list({ data }) {
 
                 <Box>
                   <Flex justify={"flex-end"} gap={"xs"}>
-                    <ActionIcon color="green">
+                    <ActionIcon color="black">
                       <IconPencil size={16} />
                     </ActionIcon>
                     <ActionIcon color="red" onClick={() => {
