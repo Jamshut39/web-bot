@@ -13,7 +13,7 @@ const App_Nav = () => {
 
 
     if (error) return <div>failed to load</div>;
-    if (isLoading) return <div>loading...</div>;
+    if (isLoading) return <Container size={'xl'}>loading...</Container>;
 
     return (
         <>

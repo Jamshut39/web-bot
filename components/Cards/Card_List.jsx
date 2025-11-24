@@ -8,7 +8,7 @@ const Card_List = ({ data }) => {
       <Grid gutter="xs">
         {data?.map((item) => {
           return (
-            <Grid.Col key={item._id} span={{ base: 6, md: 6, lg: 3 }}>
+            <Grid.Col key={item._id} span={{ base: 6, md: 6, lg: 2 }}>
               <Card shadow="sm" padding="xs" radius="sm" withBorder>
                 <Card.Section>
                   <Image
@@ -29,7 +29,7 @@ const Card_List = ({ data }) => {
 
 
                 <Group grow mt={"xs"} >
-                  <Button color='dark'  rightSection={<IconShoppingCartPlus size={20}/>}>
+                  <Button color='dark' rightSection={<IconShoppingCartPlus size={20} />}>
                     Sotib Olish
                   </Button>
                 </Group>
