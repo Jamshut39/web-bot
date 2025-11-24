@@ -30,7 +30,7 @@ const Card_List = ({ data }) => {
 
                 <Group grow mt={"xs"} >
                   <Button color='dark'  rightSection={<IconShoppingCartPlus size={20}/>}>
-                    Savatga Qo'shish
+                    Sotib Olish
                   </Button>
                 </Group>
 
