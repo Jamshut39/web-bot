@@ -116,7 +116,7 @@ const page = () => {
     return (
         <Container size="xl" py="sm">
             <Link href="/dashboard">
-                <Button variant="light">Ortga Qaytish</Button>
+                <Button variant="light" color="dark">Ortga Qaytish</Button>
             </Link>
             <form onSubmit={form.onSubmit(CreateProduct)}>
                 <Paper p="md" mt="md" withBorder>
@@ -191,7 +191,7 @@ const page = () => {
 
 
                     {/* Submit Button */}
-                    <Button type="submit" mt="md">
+                    <Button type="submit" mt="md" color="dark">
                         Elonni qo‘shish
                     </Button>
                 </Paper>

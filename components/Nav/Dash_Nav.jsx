@@ -6,13 +6,13 @@ function Dash_Nav() {
     return (
         <>
             <Flex py={"xs"} gap={'sm'}>
-                <Link href={"/"}>
-                    <Button>
+                <Link href={"/"} >
+                    <Button color="dark">
                         Bosh Sahifa
                     </Button>
                 </Link>
                 <Link href={`/dashboard/add`}>
-                    <Button variant="light">
+                    <Button variant="light" color="dark">
                         Mahsulotni qo'shish
                     </Button>
                 </Link>
